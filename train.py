@@ -14,8 +14,8 @@ def main():
     # ─── Hyperparams ─────────────────────────────────────────────
     CACHE_DIR   = "data/cache_small"
     LABELS_JSON = "labels.json"
-    BATCH_SIZE  = 16
-    NUM_WORKERS = 4
+    BATCH_SIZE  = 100
+    NUM_WORKERS = 2
     LR          = 1e-4
     EPOCHS      = 20
     # ─────────────────────────────────────────────────────────────

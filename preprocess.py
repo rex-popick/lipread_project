@@ -8,8 +8,8 @@ from tqdm import tqdm
 import mediapipe as mp
 
 # Settings
-VIDEO_DIR  = "data/videos_small"
-CACHE_DIR  = "data/cache_small"
+VIDEO_DIR  = "data/videos"
+CACHE_DIR  = "data/cache"
 ALIGN_DIR  = "data/grid_align"    # if you need transcripts too
 LABELS_JSON= "labels.json"
 MOUTH_IDX  = [78,95,88,178,87,14,317,402,318,324,308]
