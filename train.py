@@ -14,7 +14,7 @@ from dataloaders import get_loader
 from model import LipNet
 
 # ─── Config ───────────────────────────────────────────────────────────────────
-CACHE_DIR      = "data/cache_small"
+CACHE_DIR      = "data/cache"
 LABELS_JSON    = "labels.json"
 CHECKPOINT_DIR = "checkpoints"
 BATCH_SIZE     = 64      # bump higher if your GPU can handle it
