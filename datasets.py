@@ -17,7 +17,7 @@ class CachedLipreadingDataset(Dataset):
 
     def __getitem__(self, idx):
         fname = self.files[idx]
-        print("Loading", fname)
+        # print("Loading", fname)
         arr   = np.load(os.path.join(self.cache_dir, fname))    # [T,112,112,3]
         vid   = torch.from_numpy(arr).permute(3,0,1,2).float() / 255.0
         transcript = self.labels.get(fname.replace(".npy", ".mpg"), "")
