@@ -18,7 +18,7 @@ from model import LipNet
 CACHE_DIR = "/content/drive/MyDrive/colab-notebooks/lipreading-project/data/cache"
 LABELS_JSON    = "labels.json"
 # CHECKPOINT_DIR = "checkpoints"
-CHECKPOINT_DIR = "/content/drive/MyDrive/path/colab-notebooks/lipreading-project/checkpoints/lipnet_best.pt"
+CHECKPOINT_DIR = "/content/drive/MyDrive/path/colab-notebooks/lipreading-project/checkpoints"
 BATCH_SIZE     = 33000      # bump higher if your GPU can handle it
 NUM_WORKERS    = 2       # lower if you hit Colab worker‐freeze warnings
 LR             = 1e-4
