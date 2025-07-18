@@ -14,10 +14,12 @@ from dataloaders import get_loader
 from model import LipNet
 
 # ─── Config ───────────────────────────────────────────────────────────────────
-CACHE_DIR      = "data/cache"
+# CACHE_DIR      = "data/cache"
+CACHE_DIR = "/content/drive/MyDrive/colab-notebooks/lipreading-project/data/cache"
 LABELS_JSON    = "labels.json"
-CHECKPOINT_DIR = "checkpoints"
-BATCH_SIZE     = 64      # bump higher if your GPU can handle it
+# CHECKPOINT_DIR = "checkpoints"
+CHECKPOINT_DIR = "/content/drive/MyDrive/path/colab-notebooks/lipreading-project/checkpoints/lipnet_best.pt"
+BATCH_SIZE     = 33000      # bump higher if your GPU can handle it
 NUM_WORKERS    = 2       # lower if you hit Colab worker‐freeze warnings
 LR             = 1e-4
 EPOCHS         = 100     # we’ll early‐stop
