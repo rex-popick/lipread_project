@@ -134,7 +134,7 @@ def main():
             best_val_loss = avg_val_loss
             epochs_no_improve = 0
             # save best model
-            best_path = os.path.join(CHECKPOINT_DIR, "lipnet_best.pt")
+            best_path = os.path.join(CHECKPOINT_DIR, "lipnet_best_7-18.pt")
             torch.save(model.state_dict(), best_path)
         else:
             epochs_no_improve += 1
